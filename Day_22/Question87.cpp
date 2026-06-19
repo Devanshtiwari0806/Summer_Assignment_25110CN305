@@ -1,4 +1,4 @@
-// Program to find caracter frequency
+// Program to find character frequency
 
 #include <iostream>
 #include <string>
