@@ -1,0 +1,30 @@
+// Program to find the longest string 
+
+#include <iostream>
+#include <string>
+#include <sstream>
+using namespace std;
+
+int main ( )
+{
+    string sentence;
+
+    cout << "Enter a sentence: ";
+    getline ( cin, sentence );
+
+    string word;
+    string longest = "";
+
+    stringstream ss ( sentence );
+
+    while ( ss >> word )
+    {
+        if ( word.length ( ) > longest.length ( ) )
+        {
+            longest = word;
+        }
+    }
+
+    cout << "Longest word: " << longest;
+    return 0;
+}
